@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d4d4ff, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #ffffff;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #4b56ff;
+    transform: scale(1.1);
+}
+
+/* HEADER / HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin: 20px;
+    border-radius: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    animation: pop 0.7s ease;
+}
+
+.profile-square {
+    width: 200px;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 5px solid #333;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    animation: float 3s infinite ease-in-out;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+    color: #222;
+    animation: slideDown 0.8s ease;
+}
+
+.title p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* CARD SECTION */
+.card {
+    background: rgb(206, 206, 206);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    animation: fadeIn 1.2s ease;
+}
+
+/* PROJECT IMAGES */
+.projects img {
+    width: 260px;
+    height: 170px;
+    border-radius: 14px;
+    object-fit: cover;
+    margin: 10px;
+    transition: 0.35s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.projects img:hover {
+    transform: scale(1.08);
+}
+
+.project-item {
+    text-align: center;
+    width: 270px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #222;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #555;
+    margin-top: -5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    from {opacity: 0; transform: translateY(-15px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pop {
+    0% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-12px);}
+    100% {transform: translateY(0);}
+}
