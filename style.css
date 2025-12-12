@@ -148,4 +148,13 @@ body {
     0% {transform: translateY(0);}
     50% {transform: translateY(-12px);}
     100% {transform: translateY(0);}
+
+}
+
+footer {
+  background-color: transparent;   /* warna footer */
+  color: white;             /* warna teks */
+  text-align: center;       /* posisikan tulisan ke tengah */
+  padding: 20px 0;          /* jarak atas-bawah */
+  margin-top: 40px;         /* kasih jarak dari konten atas */
 }
