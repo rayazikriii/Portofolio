@@ -150,12 +150,11 @@ body {
     100% {transform: translateY(0);}
 
 }
-
 footer {
   background-color: transparent;   /* warna footer */
-  color: white;             /* warna teks */
-  "text-align: center;"       /* posisikan tulisan ke tengah */
-  padding: 20px 0;          /* jarak atas-bawah */
-  margin-top: 40px;         /* kasih jarak dari konten atas */
+  color: rgb(3, 3, 3,);             /* warna teks */
+  text-align: center;       /* posisikan tulisan ke tengah */
+  padding: 5px 0;          /* jarak atas-bawah */
+  margin-top: 30px;         /* kasih jarak dari konten atas */
 }
 
