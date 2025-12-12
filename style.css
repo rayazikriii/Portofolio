@@ -154,7 +154,8 @@ body {
 footer {
   background-color: transparent;   /* warna footer */
   color: white;             /* warna teks */
-  text-align: center;       /* posisikan tulisan ke tengah */
+  "text-align: center;"       /* posisikan tulisan ke tengah */
   padding: 20px 0;          /* jarak atas-bawah */
   margin-top: 40px;         /* kasih jarak dari konten atas */
 }
+
